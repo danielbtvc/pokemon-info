@@ -1,0 +1,128 @@
+/* Page */
+
+body {
+  background: rgb(40, 40, 40);
+  color: white;
+  padding: 0 10%;
+}
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: auto;
+}
+.green-text {
+  color: #34E97C;
+}
+.header-title {
+  margin-top: 0;
+}
+.header-image {
+  max-width: 440px;
+}
+.heading-tags {
+  clear: both;
+  float: left;
+}
+.sudo-h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: aqua;
+}
+
+.sudo-h2 {
+  font-size: 12px;
+  line-height: 1.1;
+  color: aqua;
+}
+
+.image-image {
+  max-width: 50px;
+}
+
+.video-tag {
+  vertical-align: text-top;
+}
+
+.mdn-contributors {
+  color: aqua;
+}
+
+
+.html-element {
+  max-width: 600px;
+}
+
+.mdn-contributors {
+  color: aqua;
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.large-text {
+  font-size: 17px;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.sample-page {
+  padding: 10px 15px 10px 15px
+}
+
+pre {
+  border: none;
+  background-color: transparent !important;
+  font-size: 1.5em;
+  color: white;
+}
+
+.background-highlight-white {
+  background-color: rgba(255, 255, 255, 0.05)
+}
+
+p {
+  font-size: 1.15em;
+}
+
+th {
+  font-size: 1.2em;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(20, 20, 20, 0.4);
+  border: 0.5px solid rgba(128, 128, 128, 0.1);
+}
+
+td {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0.5px solid rgba(128, 128, 128, 0.1);
+}
+
+.lesson-title {
+  font-size: 2.57em /* 36px */
+}
+
+.lesson-sub-title {
+  font-size: 1.72em /* 24px */
+}
+
+em {
+  font-weight: bold;
+}
+
+.keyword {
+  font-weight: bold;
+  font-style: italic;
+  color: #34E97C;
+}
