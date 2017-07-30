@@ -1,5 +1,6 @@
 import i1 from './svg/1.svg'
 import i2 from './svg/2.svg'
+import i3 from './svg/3.svg'
 
 const pokemon = [
   {
@@ -12,7 +13,11 @@ const pokemon = [
     id: 2,
     image: i2,
   },
-
+  {
+    name: 'Venasaur',
+    id: 3,
+    image: i3,
+  },
 ]
 
 export default pokemon

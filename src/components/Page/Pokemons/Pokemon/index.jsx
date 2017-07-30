@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Grid, Image } from 'react-bootstrap'
 import fetch from 'isomorphic-fetch';
-
+import './style.css'
 
 class Pokemon extends Component {
   constructor(props) {
@@ -35,7 +35,7 @@ class Pokemon extends Component {
     return (
       <Grid>
         <p>{pokemon.species.name}</p>
-        <Image src={this.props.image} responsive alt='member picture' />
+        <Image className='pokemon-img' src={this.props.image} responsive alt='member picture' />
       </Grid>
     )
   }

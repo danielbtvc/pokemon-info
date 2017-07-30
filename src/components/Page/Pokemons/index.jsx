@@ -17,7 +17,9 @@ class Pokemons extends Component {
     ))
     return (
       <Grid>
-        {pokemons}
+        <div className='pokemon-wapper'>
+          {pokemons}
+        </div>
       </Grid>
     )
 
