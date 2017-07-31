@@ -4,6 +4,7 @@ import { Component } from 'react';
 import { Grid, Row } from 'react-bootstrap';
 import Pokemon from './Pokemon'
 import pokemon from './pokemon-data'
+import './style.css'
 
 class Pokemons extends Component {
   render() {
@@ -16,11 +17,9 @@ class Pokemons extends Component {
       />
     ))
     return (
-      <Grid>
-        <div className='pokemon-wapper'>
-          {pokemons}
-        </div>
-      </Grid>
+      <div className='pokemons-wrapper'>
+        {pokemons}
+      </div>
     )
 
   }

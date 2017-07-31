@@ -7,6 +7,7 @@ import * as actionCreators from '../../store/actions';
 import * as selectors from '../../store/selectors';
 import './style.css'
 import Pokemons from './Pokemons'
+import PokemonDetail from './PokemonDetail'
 
 // import * as ku from '../../lib/ke-utils'
 
@@ -20,7 +21,16 @@ const Page = () => {
         <h1 className='green-text site-title'>Pokemon Information App</h1>
         <h2 className='section-sub-title header-text'>Yarn</h2>
       </header>
-      <Pokemons />
+      <div className='content-wrapper'>
+        <div className='pokemon-page'>
+          <Pokemons />
+        </div>
+        <div className='pokemon-detail'>
+          <PokemonDetail />
+        </div>
+      </div>
+
+
     </div>
   )
 }

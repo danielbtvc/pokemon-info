@@ -1,8 +1,10 @@
-// Member
+// Pokemon
 import React, { Component } from 'react';
+import * as actionCreators from './../../../../store/actions'
 import { Grid, Image } from 'react-bootstrap'
 import fetch from 'isomorphic-fetch';
 import './style.css'
+import Img from './../../../elements/Img'
 
 class Pokemon extends Component {
   constructor(props) {
@@ -12,9 +14,15 @@ class Pokemon extends Component {
     }
   }
 
+
+  handlePokemonClick(id) {
+    console.log('pokemonClick')
+    actionCreators.updateCurrentPokemonId(id)
+
+  }
+
   componentDidMount() {
     let url = `https://pokeapi.co/api/v2/pokemon/${this.props.id}`
-    // 'https://pokeapi.co/api/v2/pokemon/150/'
     fetch(url)
       .then((response) => {
         return response.json()
@@ -33,10 +41,14 @@ class Pokemon extends Component {
     }
     // console.log(pokemon.species.name) // works
     return (
-      <Grid>
-        <p>{pokemon.species.name}</p>
-        <Image className='pokemon-img' src={this.props.image} responsive alt='member picture' />
-      </Grid>
+      <div className='pokemon-card'>
+        <p className='pokemon-name'>{pokemon.species.name}</p>
+        <Img
+          src={this.props.image}
+          alt='picture of pokemen'
+          onClick={this.handlePokemonClick(this.props.id)}/>
+
+      </div>
     )
   }
 

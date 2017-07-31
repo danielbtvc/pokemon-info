@@ -44,5 +44,19 @@ header {
 
 .pokemon-wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-flow: row nowap;
+  height: 80vh;
+}
+
+.pokemon-page {
+  flex-grow: 9;
+}
+
+.pokemon-detail {
+  flex-grow: 3;
 }
