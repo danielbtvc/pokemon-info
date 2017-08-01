@@ -19,7 +19,7 @@ const Page = () => {
 
       <header>
         <h1 className='green-text site-title'>Pokemon Information App</h1>
-        <h2 className='section-sub-title header-text'>Yarn</h2>
+        <h2 className='section-sub-title header-text'>Click on a pokemon</h2>
       </header>
       <div className='content-wrapper'>
         <div className='pokemon-page'>
